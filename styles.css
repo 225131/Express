@@ -1,0 +1,192 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family:'Montserrat';
+}
+#home{
+    padding: 2% 15% 7% 15%;
+   background-image: url("BGfinal.png");
+   background-position: bottom;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
+.navbar-class.logo{
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+.navbar-class.logo:hover{
+    transform: scale(1.2);
+    
+    color: #000000;
+}
+.containerr{
+    padding: 2% 15% 7% 15%;
+}
+.navbar-class.logo{
+    color: rgb(76, 76, 76);
+}
+.logo_p{
+font-size: 2rem;
+margin: 0;
+}
+.navbar-nav{
+    font-size: 1.2rem;
+}
+.navbar-nav li{
+    padding: 3%;
+}
+.navbar-nav li::after{
+    display: block;
+    position: relative;
+    bottom: 15%;
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #254171;
+    transition: 0.5s;
+}
+.navbar-nav li:hover::after{
+width: 100%;
+}
+
+.title{
+    margin-top: 10%;
+    padding-bottom: 15%;
+}
+.title h1{
+    text-align: left;
+    font-family:'Montserrat';
+    font-size: 3rem;
+    
+}
+
+.title-grid{
+    text-align: center;
+}
+
+
+#features{
+    background-color: #fff;
+    text-align: center;
+    font-family:'Montserrat';
+    padding: 10% 15%;
+    
+}
+ 
+.col-lg-4.feature{
+padding: 0% 0;
+}
+.col-lg-4.feature i{
+font-size: 2rem;
+margin-bottom: 3%;
+color: #254171;
+}
+
+#pricing{
+    padding: 0% 15%;
+    font-family: 'Montserrat';
+    background-color: #fff;
+    text-align: center;
+}
+
+#pricing h1{
+    text-align: center;
+    margin-bottom: 7%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    line-height: 3.5rem;
+}
+.cards{
+    margin: 3% 0;
+}
+.card-header h3{
+    color: #fff;
+}
+.cards.col-lg-6.pricing_card p{
+    margin-right: 12%;
+}
+
+/* ANIMATIONS */
+.scrl,.feature ,.pricing_h1, .pricing_card, #Hero, #fea, .contact_h1, .contact_card{
+    opacity: 0;
+ }
+ .scrl.animate__animated, .feature.animate__animated, .pricing_h1.animate__animated, .pricing_card.animate__animated, #Hero.animate__animated, #fea.animate_animated, .contact_h1.animate__animated, .contact_card.animate__animated{
+     opacity: 1;
+ 
+ }
+
+ /* CONTACT */
+#contact{
+    padding: 10% 15%;
+    font-family:'Montserrat';
+    text-align: center;
+    
+}
+#contact h1{
+    margin-bottom: 7%;
+    
+}
+#contact i{
+    font-size: 1.5rem;
+    padding-bottom: 2%;
+    color: #254171;
+}
+#contact p{
+    color: rgb(125, 125, 125);
+}
+#footer{
+    padding: 0% 15% 0 15%;
+    text-align: center;
+    background-color: #d0d0d089;
+}
+#footer p{
+    display: inline-block;
+    margin: 2% 5%;
+}
+
+@media (max-width: 650px){
+    .navbar-class.logo{
+        font-size: 1.2rem;
+    }
+    .navbar-toggler-icon{
+        font-size: 0.8rem;
+    }
+    .title h1{
+        text-align: left;
+        font-family:'Montserrat';
+        font-size: 1.5rem;
+        padding-left: 8%;
+        
+    }
+    .col-lg-4.feature{
+        margin: 5% 0;
+    }
+    .col-lg-4.feature h5{
+        
+        font-size: 1rem;
+    }
+    .col-lg-4.feature i{
+        font-size: 1.5rem;
+    }
+    #pricing h1{
+        font-size: 2rem;
+        margin: 0 0;
+    }
+    .cards.col-lg-6.pricing_card{
+        padding: 0 15%;
+        margin: 5% 0;
+    }
+    .col-lg-4.contact_card{
+        margin: 5% 0;
+    }
+    #contact h1{
+        font-size: 2rem;
+    }
+    .cards.col-lg-6.pricing_card p{
+        text-align: center;
+        margin-right: 20%;
+    }
+}
